@@ -4,7 +4,7 @@ import { paths } from '../paths';
 import SectionSelector from '../../components/SectionSelector';
 import Home from '../../components/HomeSection';
 import Planets from '../../components/PlanetsSection';
-
+import StarShips from '../../components/starships';
 const MainContainer = () => {
   const location = useLocation();
   const pathName = Object.keys(paths).find(
@@ -36,6 +36,9 @@ const MainContainer = () => {
               cada starship: name, model, manufacturer, passengers, cantidad de
               films. Codear en un componente aparte tal como {'<Planets>'}.
             </p>
+            <div>
+              <StarShips />
+            </div>
             <p>
               <a href="https://swapi.it/documentation#starships">
                 https://swapi.it/documentation#starships
